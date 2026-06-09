@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Fetch feed
         run: |
-          curl -L -o feed.xml "https://speceffect.shop/products_feed.xml?hash_tag=80ca85d4f491a77112f138bf26f8d627&sales_notes=&product_ids=&label_ids=129025959&exclude_fields=&html_description=1&yandex_cpa=&process_presence_sure=&languages=uk%2Cru&extra_fields=quantityInStock%2Ckeywords&group_ids="
+          curl -L -o feed.xml "https://speceffect.shop/products_feed.xml?hash_tag=80ca85d4f491a77112f138bf26f8d627&sales_notes=&product_ids=&label_ids=&exclude_fields=&html_description=1&yandex_cpa=&process_presence_sure=&languages=uk%2Cru&extra_fields=quantityInStock&group_ids="
       - name: Upload to release
         uses: softprops/action-gh-release@v2
         with:
